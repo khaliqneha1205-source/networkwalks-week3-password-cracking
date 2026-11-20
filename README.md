@@ -18,3 +18,14 @@ This repository documents the completion of the **Week 3 Essential Project Modul
    Moved `My Locked PDF1.pdf` into the working directory and extracted its `$pdf$` hash into `hash1.txt` using `pdf2john`:
    ```bash
    pdf2john "My Locked PDF1.pdf" > hash1.txt
+   ## Module 2 (`W3-PM2`): Password Cracking with NetworkWalks Tools
+
+## Module 2 (`W3-PM2`): Password Cracking with NetworkWalks Tools
+
+### Target File
+* `My Locked PDF1 (for NW Tools Lab WK3-PM2).pdf`
+
+### Steps Performed
+1. **Hash Extraction:** Extracted the `$pdf$` password hash string from the locked PDF using `pdf2john`:
+   ```bash
+   pdf2john "My Locked PDF1 (for NW Tools Lab WK3-PM2).pdf" | cut -d':' -f2
